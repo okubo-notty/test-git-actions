@@ -1,0 +1,12 @@
+name: My First Workflow  # Workflowの名前
+
+on: [push]  # トリガー：コードがPushされたら実行
+
+jobs:
+  greet-job:  # ジョブID（任意）
+    runs-on: ubuntu-latest  # 実行環境：最新のUbuntuを指定
+    
+    steps:
+      - name: Say Hello
+        run: echo "Hello, GitHub Actions! This is a test run."
+
